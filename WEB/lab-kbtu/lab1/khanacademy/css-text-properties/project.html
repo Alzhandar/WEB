@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Project: Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Trebuchet MS', sans-serif;
+            color: #333;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        h3 {
+            margin-top: 40px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .post {
+            margin-bottom: 40px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .post h2 {
+            margin-top: 0;
+        }
+        
+        .post h6 {
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .post p {
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <h1>John's Blog</h1>
+
+    <h3>Contents</h3>
+    <ul>
+        <li><a href="#entry1">First post!</a></li>
+        <li><a href="#entry2">Second post!</a></li>
+    </ul>
+    
+    <div class="post" id="entry1">
+        <h2>First post</h2>
+        <h6>Posted on January 1, 2024</h6>
+        <p>Something exciting happened in my journey to becoming a programmer!</p>
+    </div>
+    
+    <div class="post" id="entry2">
+        <h2>Second post</h2>
+        <h6>Posted on January 5, 2024</h6>
+        <p>Today, I learned about HTML and CSS and created my first blog!</p>
+    </div>
+</body>
+</html>
