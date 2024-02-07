@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  position: relative; 
+}
+
+a {
+  text-decoration: none;
+  color: #0078d4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative; 
+}
+
+.logo {
+  float: left;
+  margin-top: 10px;
+}
+
+.nav {
+  float: left;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.nav a {
+  margin-right: 20px;
+}
+
+.search-bar {
+  float: right;
+  margin-top: 15px;
+}
+
+.search-bar input {
+  padding: 5px;
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  background-color: #0078d4;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-profile {
+  float: right;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+.user-profile a {
+  margin-right: 10px;
+}
+
+.hero {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+  position: relative; 
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px; 
+  color: white;
+  width: 50%; 
+  box-sizing: border-box; 
+  margin-top: 10%;
+}
+
+.downloads {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.download-item {
+  flex-basis: 23%; 
+  text-align: center;
+}
+
+.download-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.download-item p {
+  margin-bottom: 5px;
+}
+
+.download-item a {
+  display: block;
+  background-color: #0078d4;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.download-item a:hover {
+  background-color: #005f9e;
+}
+
+.cta a.butt {
+  display: inline-block;
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-decoration: none;
+}
