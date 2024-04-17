@@ -1,0 +1,4 @@
+Django
+Django-rest-framework
+Pillow
+Django-cors-headers
