@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/custom_style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Categories</h1>
+        <div class="categories-list">
+            {% for category in categories %}
+                <div class="category-item">
+                    <h2><a href="{% url 'category_detail' category.id %}">{{ category.name }}</a></h2>
+                    <p>{{ category.desc }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

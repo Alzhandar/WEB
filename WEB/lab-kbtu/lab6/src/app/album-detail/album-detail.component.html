@@ -1,0 +1,27 @@
+<div *ngIf="loaded" class="album-details">
+  <header class="album-header">
+    <h2>Album Detail #{{album.id}}</h2>
+    <h3>{{album.title}}</h3>
+  </header>
+  <section class="album-edit">
+    <h4>Edit Title Of Album</h4>
+    <div class="input-group">
+      <input type="text" [(ngModel)]="name" placeholder="Enter new title" class="input-field">
+      <button (click)="updateAlbum()" class="save-btn">Save</button>
+    </div>
+    <nav class="album-links">
+      <a [routerLink]="['photos']" class="photos-link">Photos of album</a>
+      <button (click)="goBack()" class="back-btn">Go Back</button>
+    </nav>
+  </section>
+</div>
+<p *ngIf="!loaded" class="loading-text">Loading album...</p>
+
+<section *ngIf="photos.length" class="photo-gallery">
+  <ul class="photo-list">
+    <li *ngFor="let photo of photos" class="photo-item">
+      <h5>{{photo.id}}) {{photo.title}}</h5>
+      <img src="{{photo.url}}" alt="photo of album" class="photo-img">
+    </li>
+  </ul>
+</section>

@@ -1,0 +1,37 @@
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Viewport height for full screen height */
+    padding: 2rem;
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* A pleasant background gradient */
+    text-align: center;
+  }
+  
+  .home-container {
+    max-width: 600px;
+  }
+  
+  .home-title {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .home-text {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #d0f0f6;
+  }
+  
+  .home-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #025e8a;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  

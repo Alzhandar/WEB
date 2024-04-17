@@ -1,0 +1,113 @@
+.album-details {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .album-header {
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .album-header h2 {
+    color: #333;
+    font-weight: normal;
+  }
+  
+  .album-header h3 {
+    color: #666;
+    font-weight: lighter;
+  }
+  
+  .album-edit h4 {
+    margin: 1rem 0;
+  }
+  
+  .input-group {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .input-field {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .save-btn,
+  .back-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .save-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .save-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .back-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .back-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  .photos-link {
+    display: inline-block;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #2196F3;
+    transition: color 0.2s;
+  }
+  
+  .photos-link:hover {
+    color: #0b7dda;
+  }
+  
+  .loading-text {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  
+  .photo-gallery {
+    margin-top: 2rem;
+  }
+  
+  .photo-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+  
+  .photo-item {
+    border: 1px solid #eaeaea;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: white;
+  }
+  
+  .photo-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 1rem;
+  }
+  

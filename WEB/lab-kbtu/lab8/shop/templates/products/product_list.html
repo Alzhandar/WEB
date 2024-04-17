@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/custom_style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+</head>
+<body>
+    <header>
+        <div class="search-container">
+            <form action="" method="get">
+                <input type="text" name="search_query" placeholder="Search products..." value="{{ request.GET.search_query }}">
+                <button type="submit">🔍</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <h1>Products</h1>
+        <div class="category-link">
+            <a href="{% url 'category_list' %}" class="btn">Категории</a>
+        </div>
+        <section class="product-list">
+            {% for product in products %}
+            <div class="product-item">
+                <a href="{% url 'product_detail' product.id %}">
+                    <h2>{{ product.name }}</h2>
+                    <p>{{ product.desc }}</p>
+                    <span class="price">${{ product.price }}</span>
+                </a>
+            </div>
+            {% endfor %}
+        </section>
+    </main>
+</body>
+</html>

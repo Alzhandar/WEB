@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://cdn.vox-cdn.com/thumbor/7jwR5vXaErwWmcPb63irfZv6sHI=/0x0:5000x3749/1400x933/filters:focal(3111x664:3911x1464):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/57849179/884573770.jpg.0.jpg'); /* Путь к изображению фона */
+    background-size: cover;
+  }
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f7f6f6;
+  }
+  h1 {
+    text-align: center;
+  }
+  .section {
+    margin-bottom: 20px;
+  }
+  #taskInput {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  #addTaskBtn {
+    width: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  .taskDone {
+    text-decoration: line-through;
+    color: #000000;
+    
+  }
+  #deleteAllBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .deleteTaskBtn {
+    cursor: pointer;
+  }
